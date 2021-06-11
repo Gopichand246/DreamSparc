@@ -1,0 +1,59 @@
+.Header
+{
+    display:inline-flex;
+    justify-content: space-between;
+    font-style:normal;
+    text-align: center;
+    margin-top: 10px;
+    position: sticky;
+    z-index: 999;
+    top:0;
+    width: 100%;
+    height: 2cm;
+    background-color:white;
+}
+.title
+{
+    margin-left: 2cm;
+    margin-top: 10px;
+}
+.titleMenu
+{
+    margin-right: 1cm;
+}
+.titleMenu a{
+    display: inline-block;
+    top:0;
+    position: relative;
+    margin:0 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    align-items: center;
+    white-space: nowrap;
+}
+.titleMenu a::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: dodgerblue;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.titleMenu a:hover::before
+{   
+    visibility: visible;
+    transform: scaleX(1);
+}
+.titleMenu a:hover
+{
+    color:dodgerblue;
+}

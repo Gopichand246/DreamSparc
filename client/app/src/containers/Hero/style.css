@@ -1,0 +1,128 @@
+.image
+{   
+    filter: contrast(100%);
+    opacity: 0.3;
+    z-index: -1 ;
+}
+.body
+{   
+    position: relative;
+    font-family: Arial;
+    text-align: center;
+    justify-content: space-between;
+    font-style:normal;
+}
+.imageText
+{
+    position: absolute;
+    top:150px;
+    left: 100px;
+    color:black;
+    font-size:x-large;
+}
+.imageTitle
+{
+   color:dodgerblue;
+   font-size: larger;
+}
+.demo
+{
+    display: flex;
+}
+.imageDemo
+{
+    background-color:dodgerblue;
+    width: 200px;
+    padding: 6px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.imageDemo a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.imageDemo a:hover
+{
+    color: black;
+}
+.videoDemo 
+{   
+    background-color:dodgerblue;
+    width: 200px;
+    padding: 6px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.videoDemo a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.videoDemo a:hover
+{
+ color: black;   
+}
+
+.category 
+{   
+    display: flex;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    justify-content: space-between;
+    font-style:normal;
+    margin-top: 10%;
+    float:inline-start;
+}
+
+.overlay
+{
+    position: absolute;
+    bottom: 100%;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+.music:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.arts:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.sports:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.vocab:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+.Text{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.music, .arts, .sports, .vocab
+{   
+    display: block;
+    width: 20%;
+    margin-top: -2cm;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

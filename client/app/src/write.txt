@@ -1,0 +1,47 @@
+.category a{
+    color: black;
+    font-weight: bold;
+    width: 1000px;
+    padding: 100px;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 20px;
+    box-shadow:
+        0 0 0 7px hsl(0, 14%, 95%),
+        0 0 0 10px hsl(0, 40%, 98%),
+        0 0 0 15px hsl(0, 12%, 97%)
+}
+
+.overlay
+{
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 80%;
+    height:0;
+    transition: .5s ease;
+}
+
+.category a:hover
+{
+    background-color:dodgerblue;
+    color:floralwhite;
+}
+
+<div className = "music"> <a href="#"> <img src ={music} width = "80%" height= "100%" /> </a>
+                        <div className = "overlay"> <div className = "Text"> MUSIC </div></div>
+                     </div>
+                    <div className = "arts"> <a href="#"> <img src ={arts} width = "80%" height= "100%" /> </a> 
+                        <div className = "overlay"> <div className = "Text"> ARTS </div></div>
+                    </div>
+                    <div className = "sports"> <a href="#"> <img src ={sports} width = "80%" height= "100%"/> </a>
+                        <div className = "overlay"> <div className = "Text"> SPORTS </div></div>
+                    </div>
+                    <div className = "vocab"> <a href="#"> <img src ={vocab} width = "80%" height= "100%" />  </a> 
+                        <div className = "overlay"> <div className = "Text"> VOCABULARY </div></div>
+                    </div>
